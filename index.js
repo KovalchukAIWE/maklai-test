@@ -6,7 +6,7 @@ document
     const startDate = document.getElementById("startDate").value;
     const endDate = document.getElementById("endDate").value;
 
-    const apiUrl = `https://fakerapi.it/api/v1/persons?_locale=en_US&_seed=12345&_gender=&_birthday_from=${startDate}&_birthday_to=${endDate}&_quantity=10`;
+    const apiUrl = `https://fakerapi.it/api/v1/persons?_locale=en_US&_gender=&_birthday_from=${startDate}&_birthday_to=${endDate}&_quantity=6`;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -23,7 +23,7 @@ function displayResults(people) {
   resultsList.innerHTML = "";
 
   if (people.length === 0) {
-    resultsList.textContent = "No people found in the selected date range.";
+    resultsList.textContent = "Нікого не знайдено в заданому діапазоні";
   } else {
     people.forEach((person) => {
       const li = document.createElement("li");
