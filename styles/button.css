@@ -14,6 +14,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 250ms;
+  margin-top: 8px;
 }
 
 .button:hover {
@@ -23,5 +24,6 @@
 @media screen and (min-width: 768px) {
   .button {
     max-width: 256px;
+    margin: 0;
   }
 }
