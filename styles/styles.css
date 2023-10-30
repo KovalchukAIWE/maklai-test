@@ -3,6 +3,7 @@
 @import url('./form.css');
 @import url('./card.css');
 @import url('./button.css');
+@import url('./pagination.css');
 
 .wrapper {
   padding: 48px 0 29px;

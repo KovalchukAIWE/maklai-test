@@ -29,8 +29,17 @@
         </form>
       </div>
       <ul class="cards" id="results"></ul>
+      <div class="pagination">
+        <button class="pagination__button" id="prevPage" disabled>
+          <img class="pagination__icon" src="./images/arrow-left.svg" />
+        </button>
+        <span class="pagination__number" id="currentPage">Page 1</span>
+        <button class="pagination__button" id="nextPage">
+          <img class="pagination__icon" src="./images/arrow-right.svg" />
+        </button>
+      </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
